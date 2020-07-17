@@ -14,13 +14,13 @@ console.log(resultMile2);
 
 //woodCalculator solution
 function woodCalculator(numChair, numTable, numBed){
-    let woodChair = numChair * 1;
-    let woodTable = numTable * 3;
-    let woodBed = numBed * 5;
-    let total = woodChair + woodTable + woodBed;
+    const woodChair = numChair * 1;
+    const woodTable = numTable * 3;
+    const woodBed = numBed * 5;
+    const total = woodChair + woodTable + woodBed;
     return total;
 };
-let result = woodCalculator(10, 50, 70);
+const result = woodCalculator(10, 50, 70);
 console.log(result);
 
 //brickCalculator solution
@@ -38,12 +38,12 @@ function brickCalculator(floorNumber){
         return brickNumber;
     }
     else {
-        return "Something is wrong!";
+        return "wrong input!";
     }
-};
-let result1 = brickCalculator(12);
+}
+let result1 = brickCalculator(10);
 console.log(result1);
-let result2 = brickCalculator(26);
+let result2 = brickCalculator(15);
 console.log(result2);
 let result3 = brickCalculator(35);
 console.log(result3);
@@ -60,7 +60,7 @@ function tinyFriend(friend){
         }
     }
     return singleFriend;
-};
+}
 let friends =["Johir", "Shaki", "Abid", "Rashel", "Soriful" , "Manik"];
 let results = tinyFriend(friends);
 console.log(results);
